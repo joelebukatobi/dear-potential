@@ -295,6 +295,23 @@
   }
 }
 
+.navbar__white {
+  &__nav {
+    & .navbar__nav__list {
+      & .navbar__nav__list__item {
+        & .navbar__nav__list__item__link {
+          color: $color-black;
+        }
+      }
+    }
+    &__btn {
+      & .btn {
+        background-color: $color-primary;
+      }
+    }
+  }
+}
+
 .footer {
   padding: 9.6rem 16rem;
   background-color: $color-primary;

@@ -292,6 +292,12 @@ body {
       .navbar__nav__list__item__link {
         font-size: 1.45rem; } }
 
+.navbar__white__nav .navbar__nav__list .navbar__nav__list__item .navbar__nav__list__item__link {
+  color: #000000; }
+
+.navbar__white__nav__btn .btn {
+  background-color: #06225d; }
+
 .footer {
   padding: 9.6rem 16rem;
   background-color: #06225d;
@@ -354,6 +360,45 @@ input {
   background: #dd792f;
   border: 0;
   margin: 2.4rem 0; }
+
+.banner {
+  position: relative;
+  padding: 9.6rem 0; }
+  .banner__image {
+    width: 100%;
+    height: 54.4rem; }
+  .banner__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2.4rem;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    color: #ffffff; }
+    .banner__text__header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 2.4rem; }
+      .banner__text__header .heading-2 {
+        color: #ffffff; }
+      .banner__text__header .paragraph {
+        width: 64rem;
+        text-align: center;
+        margin-bottom: 2.4rem; }
+    .banner__text__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; }
+      .banner__text__form__btn {
+        background-color: #dd792f;
+        width: 30%;
+        margin-top: 2.4rem; }
 
 .header {
   position: relative;
@@ -469,45 +514,6 @@ input {
       .news__row__card .post-details {
         padding-bottom: 1.6rem; }
 
-.banner {
-  position: relative;
-  padding: 9.6rem 0; }
-  .banner__image {
-    width: 100%;
-    height: 54.4rem; }
-  .banner__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 2.4rem;
-    justify-content: center;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    color: #ffffff; }
-    .banner__text__header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      margin-bottom: 2.4rem; }
-      .banner__text__header .heading-2 {
-        color: #ffffff; }
-      .banner__text__header .paragraph {
-        width: 64rem;
-        text-align: center;
-        margin-bottom: 2.4rem; }
-    .banner__text__form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between; }
-      .banner__text__form__btn {
-        background-color: #dd792f;
-        width: 30%;
-        margin-top: 2.4rem; }
-
 .featured {
   padding: 0rem 16rem 9.6rem 16rem;
   display: flex;
@@ -544,36 +550,64 @@ input {
         right: 40rem;
         z-index: 5; }
 
-.footer {
+.about {
   padding: 9.6rem 16rem;
-  background-color: #06225d;
-  color: #ffffff;
-  font-weight: 300;
   display: flex;
-  flex-direction: column; }
-  .footer__logo {
+  align-items: center;
+  justify-content: space-between; }
+  .about__header {
+    width: 45%; }
+    .about__header .heading-3 {
+      color: #000000; }
+    .about__header .paragraph:nth-of-type(1) {
+      text-transform: uppercase;
+      color: #06225d; }
+    .about__header .paragraph:nth-of-type(2) {
+      margin-top: 1.6rem; }
+  .about__container {
+    width: 50%;
+    display: flex; }
+    .about__container__image {
+      width: 47%; }
+      .about__container__image:nth-of-type(1) {
+        margin-top: 9.6rem;
+        margin-right: 3.2rem; }
+      .about__container__image:nth-of-type(2) {
+        margin-bottom: 9.6rem; }
+
+.vision {
+  padding: 9.6rem 16rem;
+  display: flex;
+  position: relative; }
+  .vision__image {
+    margin-top: 6.4rem;
+    width: 40%; }
+    .vision__image__pic {
+      width: 100%;
+      box-shadow: -1px 4px 10px rgba(158, 158, 158, 0.25); }
+  .vision .decoration {
+    position: absolute;
+    left: 37%;
+    top: 4rem;
+    z-index: -1; }
+  .vision__text {
+    margin-left: auto;
+    width: 60%;
+    background-color: #06225d;
+    padding: 6.4rem 9.6rem 7.2rem 6.4rem;
+    margin-bottom: 6.4rem; }
+    .vision__text > * {
+      margin: 0.8rem 0;
+      color: #ffffff; }
+
+.mission {
+  padding: 0 16rem 9.6rem 16rem; }
+  .mission__header {
     margin-bottom: 2.4rem; }
-    .footer__logo__image {
-      height: 5.6rem; }
-  .footer__text {
+    .mission__header .heading-3 {
+      margin-bottom: 0.8rem; }
+  .mission__image {
     display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin-bottom: 3.2rem; }
-    .footer__text__item {
-      display: flex; }
-      .footer__text__item__image {
-        margin-right: 0.8rem; }
-  .footer hr {
-    height: 0.1rem;
-    background: #ffffff;
-    border: 0;
-    margin-bottom: 3.2rem; }
-  .footer__dev {
-    display: flex;
-    align-items: center;
     justify-content: space-between; }
-    .footer__dev .paragraph {
-      font-size: 1.4rem; }
-    .footer__dev__sm img {
-      height: 2.4rem; }
+    .mission__image__pic {
+      width: 30%; }
