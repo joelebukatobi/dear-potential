@@ -1,5 +1,5 @@
 .about {
-  padding: 9.6rem 16rem;
+  padding: 0 16rem 9.6rem 16rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,6 +27,30 @@
       }
       &:nth-of-type(2) {
         margin-bottom: 9.6rem;
+      }
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 0 2.4rem 4.8rem 2.4rem;
+    flex-direction: column;
+    &__header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    &__container {
+      margin-top: 3.2rem;
+      width: 100%;
+      &__image {
+        &:nth-of-type(1) {
+          margin-top: 4.8rem;
+          margin-right: 1.6rem;
+        }
+        &:nth-of-type(2) {
+          margin-bottom: 4.8rem;
+        }
       }
     }
   }
@@ -62,7 +86,26 @@
       color: $color-white;
     }
   }
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 4.8rem 2.4rem;
+    flex-direction: column-reverse;
+    & .decoration {
+      display: none;
+    }
+
+    &__image {
+      width: 100%;
+
+      margin: 0rem;
+    }
+    &__text {
+      width: 100%;
+      margin-bottom: 3.2rem;
+    }
+  }
 }
+
 .mission {
   padding: 0 16rem 9.6rem 16rem;
   &__header {
@@ -76,6 +119,17 @@
     justify-content: space-between;
     &__pic {
       width: 30%;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 0 2.4rem 4.8rem 2.4rem;
+    &__image {
+      flex-direction: column;
+      &__pic {
+        width: 100%;
+        margin-bottom: 3.2rem;
+      }
     }
   }
 }
