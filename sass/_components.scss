@@ -123,10 +123,11 @@ textarea {
   margin-right: auto;
   left: 0;
   right: 0;
-  text-align: center;
   width: 100%;
   @media (min-width: 320px) and (max-width: 576px) {
     // background-color: $color-white;
+
+    text-align: unset;
   }
 }
 

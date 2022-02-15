@@ -96,23 +96,23 @@
   }
 
   @media (min-width: 320px) and (max-width: 576px) {
-    height: 100vh;
+    // height: 100%;
     &__container {
-      position: fixed;
-      height: 120vh;
+      height: 100%;
       &__image {
+        height: 100%;
         left: -130%;
-        width: 320%;
+        width: unset;
       }
     }
     &__bg {
-      position: fixed;
-      height: 120vh;
+      height: 100%;
     }
     &__text {
-      top: 4rem;
+      height: 100%;
       padding: 0 2.4rem;
       flex-direction: column;
+      justify-content: flex-end;
       &__content {
         width: 100%;
         & .paragraph:nth-of-type(2),
@@ -123,27 +123,28 @@
       }
       &__form {
         width: 100%;
+        margin-bottom: 4rem;
       }
     }
   }
 
-  @media (min-width: 320px) and (max-width: 480px) {
-    height: 115vh;
-    &__container {
-      height: 130vh;
-    }
-    &__bg {
-      height: 130vh;
-    }
-  }
+  // @media (min-width: 320px) and (max-width: 480px) {
+  //   height: 115vh;
+  //   &__container {
+  //     height: 130vh;
+  //   }
+  //   &__bg {
+  //     height: 130vh;
+  //   }
+  // }
 
-  @media (max-width: 320px) {
-    height: 130vh;
-    &__container {
-      height: 150vh;
-    }
-    &__bg {
-      height: 150vh;
-    }
-  }
+  // @media (max-width: 320px) {
+  //   height: 130vh;
+  //   &__container {
+  //     height: 150vh;
+  //   }
+  //   &__bg {
+  //     height: 150vh;
+  //   }
+  // }
 }

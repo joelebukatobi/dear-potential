@@ -25,6 +25,7 @@
     z-index: -1;
     &__section {
       width: 25%;
+      height: 100%;
     }
     &__section:nth-of-type(1) {
       background-color: rgba($color-primary, 0.8);
@@ -68,17 +69,18 @@
   @media (min-width: 320px) and (max-width: 576px) {
     height: 100vh;
     &__container {
-      height: 100vh;
+      // height: 100%;
       &__image {
+        background-position: cover;
         left: -120%;
-        width: 320%;
+        // width: 320%;
       }
     }
     &__bg {
-      height: 100vh;
+      height: 100%;
     }
     &__text {
-      top: 18rem;
+      // top: 18rem;s
       padding: 0 2.4rem;
       & .paragraph {
         width: 100%;
@@ -97,6 +99,15 @@
 
   &__heading {
     color: $color-white;
+  }
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    height: 60vh;
+    &__image {
+      height: 100%;
+      margin-top: 0;
+      width: unset;
+    }
   }
 }
 
