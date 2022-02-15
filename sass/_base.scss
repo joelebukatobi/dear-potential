@@ -12,8 +12,8 @@ $color-black: #000000;
   ------
 */
 @font-face {
-  font-family: "Futura-Md";
-  src: url(../font/Futura-Md.ttf);
+  font-family: 'Futura-Md';
+  src: url(../fonts/Futura-Md.ttf);
 }
 
 @mixin centre {
@@ -27,8 +27,8 @@ $color-black: #000000;
   Font Variables
   --------------
 */
-$font-primary: "Raleway", sans-serif;
-$font-secondary: "Futura-Md";
+$font-primary: 'Raleway', sans-serif;
+$font-secondary: 'Futura-Md';
 /*
   Mobile Responsiveness
   ---------------------

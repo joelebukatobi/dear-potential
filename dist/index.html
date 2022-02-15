@@ -12,54 +12,56 @@
 
 <body>
   <!-- Navigation -->
-  <div class="navbar">
-    <div class="navbar__mobile">
-      <!-- Navbar Logo -->
-      <div class="navbar__mobile__logo">
-        <a class="navbar__mobile__logo__link" href="index.html" title="navbar">
-          <img class="navbar__mobile__logo__link__image" src="images/nav-logo.svg" alt="">
-        </a>
+  <div class="container container-navbar">
+    <div class="navbar">
+      <div class="navbar__mobile">
+        <!-- Navbar Logo -->
+        <div class="navbar__mobile__logo">
+          <a class="navbar__mobile__logo__link" href="index.html" title="navbar">
+            <img class="navbar__mobile__logo__link__image" src="images/nav-logo.svg" alt="">
+          </a>
+        </div>
+
+        <!-- Navbar Menu -->
+        <div class="navbar__mobile__menu">
+          <div class="navbar__mobile__menu__bar"></div>
+          <div class="navbar__mobile__menu__bar"></div>
+          <div class="navbar__mobile__menu__bar"></div>
+        </div>
       </div>
 
-      <!-- Navbar Menu -->
-      <div class="navbar__mobile__menu">
-        <div class="navbar__mobile__menu__bar"></div>
-        <div class="navbar__mobile__menu__bar"></div>
-        <div class="navbar__mobile__menu__bar"></div>
-      </div>
+      <!-- Navbar -->
+      <nav class="navbar__nav">
+        <ul class="navbar__nav__list">
+          <li class="navbar__nav__list__item">
+            <a class="navbar__nav__list__item__link active" href="index.html">Home</a>
+          </li>
+          <li class="navbar__nav__list__item">
+            <a class="navbar__nav__list__item__link" href="about.html">About</a>
+          </li>
+          <li class="navbar__nav__list__item">
+            <a class="navbar__nav__list__item__link" href="events.html">Events</a>
+          </li>
+          <li class="navbar__nav__list__item">
+            <a class="navbar__nav__list__item__link" href="blog.html">
+              Blog
+            </a>
+          </li>
+          <li class="navbar__nav__list__item">
+            <a class="navbar__nav__list__item__link" href="gallery.html">
+              Gallery
+            </a>
+          </li>
+          <li class="navbar__nav__list__item">
+            <a class="navbar__nav__list__item__link" href="donate.html">Donate</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="navbar__nav__btn" href="contact-us.html">
+        <button class="btn">Contact Us</button>
+      </a>
     </div>
-
-    <!-- Navbar -->
-    <nav class="navbar__nav">
-      <ul class="navbar__nav__list">
-        <li class="navbar__nav__list__item">
-          <a class="navbar__nav__list__item__link active" href="index.html">Home</a>
-        </li>
-        <li class="navbar__nav__list__item">
-          <a class="navbar__nav__list__item__link" href="about.html">About</a>
-        </li>
-        <li class="navbar__nav__list__item">
-          <a class="navbar__nav__list__item__link" href="events.html">Events</a>
-        </li>
-        <li class="navbar__nav__list__item">
-          <a class="navbar__nav__list__item__link" href="blog.html">
-            Blog
-          </a>
-        </li>
-        <li class="navbar__nav__list__item">
-          <a class="navbar__nav__list__item__link" href="gallery.html">
-            Gallery
-          </a>
-        </li>
-        <li class="navbar__nav__list__item">
-          <a class="navbar__nav__list__item__link" href="donate.html">Donate</a>
-        </li>
-      </ul>
-    </nav>
-
-    <a class="navbar__nav__btn" href="contact-us.html">
-      <button class="btn">Contact Us</button>
-    </a>
   </div>
 
   <!-- Header -->
@@ -75,7 +77,7 @@
     </div>
     <div class="header__text">
       <h1 class="heading-1">Dear Potential</h1>
-      <hr class="seperator">
+      <hr class="separator">
       <p class="paragraph">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros eu neque faucibus risus tincidunt et
         faucibus. Sed ac nec elementum vel nisl. Blandit egestas mauris consectetur quam convallis maecenas dictumst vel
@@ -90,71 +92,75 @@
   </div>
 
   <!-- Who We Are -->
-  <div class="who-we-are">
-    <div class="who-we-are__header">
-      <h2 class="heading-2">Who We Are</h2>
-      <hr class="seperator">
-    </div>
-    <div class="who-we-are__body">
-      <div class="who-we-are__body__container">
-        <img src="images/image-2.jpg" alt="" class="who-we-are__body__container__image">
-        <div class="who-we-are__body__container__border"></div>
+  <div class="container">
+    <div class="who-we-are">
+      <div class="who-we-are__header">
+        <h2 class="heading-2">Who We Are</h2>
+        <hr class="separator">
       </div>
-      <div class="who-we-are__body__text">
-        <p class="paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et ut duis eget diam amet volutpat sit nisl. Egestas
-          non et enim, amet iaculis. Tincidunt elementum consectetur metus, ut ac. Sagittis, eget sit vitae, morbi purus
-          egestas lorem consectetur. Sed eu in facilisis quis tincidunt hendrerit nunc. Non nullam elit, amet, dignissim
-          massa eget convallis. Duis lorem orci, adipiscing nibh sed odio laoreet non suscipit. Maecenas donec semper
-          ullamcorper velit dolor, sed eu adipiscing sit. Cras proin a proin tincidunt malesuada mattis sed elementum.
-          Cursus ipsum est morbi est, molestie. Ultricies feugiat hendrerit commodo, amet facilisi a. Viverra lectus
-          vitae
-          morbi diam vitae risus, urna. Nisl, quis viverra sagittis, consectetur proin. Est, vel tempor faucibus
-          vestibulum nisi ullamcorper elementum. Maecenas donec semper ullamcorper velit dolor, sed eu adipiscing sit.
-          Cras proin a proin tincidunt malesuada mattis sed elementum. Cursus ipsum est morbi est, molestie. Ultricies
-          feugiat hendrerit commodo.
-        </p>
+      <div class="who-we-are__body">
+        <div class="who-we-are__body__container">
+          <img src="images/image-2.jpg" alt="" class="who-we-are__body__container__image">
+          <div class="who-we-are__body__container__border"></div>
+        </div>
+        <div class="who-we-are__body__text">
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et ut duis eget diam amet volutpat sit nisl. Egestas
+            non et enim, amet iaculis. Tincidunt elementum consectetur metus, ut ac. Sagittis, eget sit vitae, morbi purus
+            egestas lorem consectetur. Sed eu in facilisis quis tincidunt hendrerit nunc. Non nullam elit, amet, dignissim
+            massa eget convallis. Duis lorem orci, adipiscing nibh sed odio laoreet non suscipit. Maecenas donec semper
+            ullamcorper velit dolor, sed eu adipiscing sit. Cras proin a proin tincidunt malesuada mattis sed elementum.
+            Cursus ipsum est morbi est, molestie. Ultricies feugiat hendrerit commodo, amet facilisi a. Viverra lectus
+            vitae
+            morbi diam vitae risus, urna. Nisl, quis viverra sagittis, consectetur proin. Est, vel tempor faucibus
+            vestibulum nisi ullamcorper elementum. Maecenas donec semper ullamcorper velit dolor, sed eu adipiscing sit.
+            Cras proin a proin tincidunt malesuada mattis sed elementum. Cursus ipsum est morbi est, molestie. Ultricies
+            feugiat hendrerit commodo.
+          </p>
+        </div>
       </div>
-    </div>
 
+    </div>
   </div>
 
+  <div class="container">
+    <div class="news">
+      <div class="news__header">
+        <h2 class="heading-2">Blog</h2>
+        <hr class="separator">
+      </div>
+      <div class="news__row">
+        <div class="news__row__card">
+          <img class="news__row__card__image" src="images/blog-image-1.jpg" alt="">
+          <h4 class="heading-4">Living the Single Life</h4>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et ut duis eget diam amet volutpat sit nisl. Egestas
+            non et enim, amet iaculis. Tincidunt elementum consectetur metus, ut ac.
+          </p>
+          <p class="post-details">Faith Fatoye | Mar, 29 2020 | 13 Min Read </p>
+        </div>
+        <div class="news__row__card">
+          <img class="news__row__card__image" src="images/blog-image-2.jpg" alt="">
+          <h4 class="heading-4">On Bended Knee</h4>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et ut duis eget diam amet volutpat sit nisl. Egestas
+            non et enim, amet iaculis. Tincidunt elementum consectetur metus, ut ac.
+          </p>
+          <p class="post-details">Faith Fatoye | Mar, 29 2020 | 13 Min Read </p>
+        </div>
+        <div class="news__row__card">
+          <img class="news__row__card__image" src="images/blog-image-3.jpg" alt="">
+          <h4 class="heading-4">You Are Loved</h4>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et ut duis eget diam amet volutpat sit nisl. Egestas
+            non et enim, amet iaculis. Tincidunt elementum consectetur metus, ut ac.
+          </p>
+          <p class="post-details">Faith Fatoye | Mar, 29 2020 | 13 Min Read </p>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Blog -->
-  <div class="news">
-    <div class="news__header">
-      <h2 class="heading-2">Blog</h2>
-      <hr class="seperator">
-    </div>
-    <div class="news__row">
-      <div class="news__row__card">
-        <img class="news__row__card__image" src="images/blog-image-1.jpg" alt="">
-        <h4 class="heading-4">Living the Single Life</h4>
-        <p class="paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et ut duis eget diam amet volutpat sit nisl. Egestas
-          non et enim, amet iaculis. Tincidunt elementum consectetur metus, ut ac.
-        </p>
-        <p class="post-details">Faith Fatoye | Mar, 29 2020 | 13 Min Read </p>
-      </div>
-      <div class="news__row__card">
-        <img class="news__row__card__image" src="images/blog-image-2.jpg" alt="">
-        <h4 class="heading-4">On Bended Knee</h4>
-        <p class="paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et ut duis eget diam amet volutpat sit nisl. Egestas
-          non et enim, amet iaculis. Tincidunt elementum consectetur metus, ut ac.
-        </p>
-        <p class="post-details">Faith Fatoye | Mar, 29 2020 | 13 Min Read </p>
-      </div>
-      <div class="news__row__card">
-        <img class="news__row__card__image" src="images/blog-image-3.jpg" alt="">
-        <h4 class="heading-4">You Are Loved</h4>
-        <p class="paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et ut duis eget diam amet volutpat sit nisl. Egestas
-          non et enim, amet iaculis. Tincidunt elementum consectetur metus, ut ac.
-        </p>
-        <p class="post-details">Faith Fatoye | Mar, 29 2020 | 13 Min Read </p>
-      </div>
-    </div>
-  </div>
 
   <!--Banner  -->
   <div class="banner">
@@ -162,7 +168,7 @@
     <div class="banner__text">
       <div class="banner__text__header">
         <h2 class="heading-2">Newsletter</h2>
-        <hr class="seperator">
+        <hr class="separator">
         <p class="paragraph">
           Want to get the latest update from us? Then fill the form below to subscribe to our monthly newsletter
         </p>
@@ -175,59 +181,63 @@
   </div>
 
   <!-- Featured -->
-  <div class="featured">
-    <div class="featured__txt">
-      <h2 class="heading-3">
-        Lorem ipsum dolor sit amet, consectetur dolor sit amet, adipiscing elit elit elit elit.
-      </h2>
-      <p class="paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros eu neque faucibus risus tincidunt et
-        faucibus. Sed ac nec elementum vel nisl. Blandit egestas mauris consectetur quam convallis maecenas dictumst vel
-        dolor. Tempor aliquam felis commodo in purus sollicitudin. Lorem ipsum dolor sit amet,
-      </p>
-      <img src="images/dots-image.svg" alt="">
-    </div>
-    <div class="featured__container">
-      <img src="images/section-image-1.jpg" alt="" class="featured__container__img">
-      <img src="images/section-image-2.jpg" alt="" class="featured__container__img">
-      <img src="images/section-image-3.jpg" alt="" class="featured__container__img">
+  <div class="container">
+    <div class="featured">
+      <div class="featured__txt">
+        <h2 class="heading-3">
+          Lorem ipsum dolor sit amet, consectetur dolor sit amet, adipiscing elit elit elit elit.
+        </h2>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros eu neque faucibus risus tincidunt et
+          faucibus. Sed ac nec elementum vel nisl. Blandit egestas mauris consectetur quam convallis maecenas dictumst vel
+          dolor. Tempor aliquam felis commodo in purus sollicitudin. Lorem ipsum dolor sit amet,
+        </p>
+        <img src="images/dots-image.svg" alt="">
+      </div>
+      <div class="featured__container">
+        <img src="images/section-image-1.jpg" alt="" class="featured__container__img">
+        <img src="images/section-image-2.jpg" alt="" class="featured__container__img">
+        <img src="images/section-image-3.jpg" alt="" class="featured__container__img">
+      </div>
     </div>
   </div>
 
+  <!-- Footer -->
   <footer class="footer">
-    <div class="footer__logo">
-      <img class="footer__logo__image" src="images/nav-logo.svg" alt="">
-    </div>
-    <ul class="footer__text">
-      <li class="footer__text__item">
-        <p class="paragraph">
-          <span>&copy</span> 2020 Dear Potential All Rights Reserved
-        </p>
-      </li>
-      <li class="footer__text__item">
-        <img class="footer__text__item__image" src="images/mail.svg" alt="">
-        <p class="paragraph">info@dearpotential.com</p>
-      </li>
-      <li class="footer__text__item">
-        <img class="footer__text__item__image" src="images/phone.svg" alt="">
-        <p class="paragraph">+234 817-988-3178</p>
-      </li>
-      <li class="footer__text__item">
-        <img class="footer__text__item__image" src="images/phone.svg" alt="">
-        <p class="paragraph">+234 817-988-3178</p>
-      </li>
-    </ul>
-    <hr>
-    <div class="footer__dev">
-      <p class="paragraph">
-        Designed and Developed by JetDev
-      </p>
-      <div class="footer__dev__sm">
-        <img class="header__text__sm__icon" src="images/facebook.svg" alt="">
-        <img class="header__text__sm__icon" src="images/instagram.svg" alt="">
-        <img class="header__text__sm__icon" src="images/twitter.svg" alt="">
+    <div class="container">
+      <div class="footer__logo">
+        <img class="footer__logo__image" src="images/nav-logo.svg" alt="">
       </div>
-    </div>
+      <ul class="footer__text">
+        <li class="footer__text__item">
+          <p class="paragraph">
+            <span>&copy</span> 2020 Dear Potential All Rights Reserved
+          </p>
+        </li>
+        <li class="footer__text__item">
+          <img class="footer__text__item__image" src="images/mail.svg" alt="">
+          <p class="paragraph">info@dearpotential.com</p>
+        </li>
+        <li class="footer__text__item">
+          <img class="footer__text__item__image" src="images/phone.svg" alt="">
+          <p class="paragraph">+234-817-988-3178</p>
+        </li>
+        <li class="footer__text__item">
+          <img class="footer__text__item__image" src="images/phone.svg" alt="">
+          <p class="paragraph">+234-817-988-3178</p>
+        </li>
+      </ul>
+      <hr>
+      <div class="footer__dev">
+        <p class="paragraph">
+          Designed and Developed by JetDev
+        </p>
+        <div class="footer__dev__sm">
+          <img class="header__text__sm__icon" src="images/facebook.svg" alt="">
+          <img class="header__text__sm__icon" src="images/instagram.svg" alt="">
+          <img class="header__text__sm__icon" src="images/twitter.svg" alt="">
+        </div>
+      </div>
   </footer>
 
   <script src="js/app.js"></script>

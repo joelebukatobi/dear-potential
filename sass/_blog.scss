@@ -1,83 +1,7 @@
 // Header
-.header-two {
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  &__container {
-    position: absolute;
-    top: -9.6rem;
-    height: 80vh;
-    width: 100%;
-    overflow: hidden;
-    z-index: -1;
-    &__image {
-      position: absolute;
-      height: 110%;
-      width: 100%;
-    }
-  }
-  &__bg {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    top: -9.6rem;
-    width: 100%;
-    height: 80vh;
-    z-index: -1;
-    &__section {
-      width: 25%;
-    }
-    &__section:nth-of-type(1) {
-      background-color: rgba($color-primary, 0.8);
-    }
-    &__section:nth-of-type(2) {
-      background-color: rgba($color-primary, 0.75);
-    }
-    &__section:nth-of-type(3) {
-      background-color: rgba($color-primary, 0.7);
-    }
-    &__section:nth-of-type(4) {
-      background-color: rgba($color-primary, 0.65);
-    }
-  }
-  &__text {
-    width: 100%;
-    top: 18rem;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: $color-white;
-    & .heading-2 {
-      color: $color-white;
-    }
-    & .paragraph {
-      width: 30rem;
-      text-align: center;
-    }
-  }
-
-  @media (min-width: 320px) and (max-width: 576px) {
-    height: 50vh;
-    &__container {
-      height: 50vh;
-      &__image {
-        width: 250%;
-        left: -50%;
-      }
-    }
-    &__bg {
-      height: 50vh;
-    }
-    &__text {
-      top: 6.4em;
-    }
-  }
-}
 
 .featured-post {
-  padding: 0 16rem 4.8rem 16rem;
+  padding: 9.8rem 0;
   display: flex;
   justify-content: space-between;
   &__main {
@@ -136,8 +60,7 @@
   }
 }
 
-.blog-seperator {
-  margin: 0 16rem;
+.blog-separator {
   height: 0.1rem;
   border: 0;
   background: rgba($color-primary, 0.5);
@@ -148,7 +71,7 @@
 }
 
 .blog-post {
-  padding: 4.8rem 16rem 9.6rem 16rem;
+  padding: 9.8rem 0;
   display: flex;
   justify-content: space-between;
   &__posts {
@@ -179,8 +102,8 @@
     width: 40%;
     &__ad {
       &__image {
-        width: 80%;
-        float: right;
+        width: 100%;
+        float: left;
       }
     }
   }
