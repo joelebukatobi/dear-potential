@@ -280,7 +280,8 @@ body {
               font-weight: 400; }
         .navbar__nav__btn {
           padding: 2% 5%;
-          display: none; }
+          display: none;
+          text-align: left; }
           .navbar__nav__btn .btn {
             margin-top: 1.6rem; }
       .navbar__admin {
@@ -588,8 +589,10 @@ textarea {
   margin-right: auto;
   left: 0;
   right: 0;
-  text-align: center;
   width: 100%; }
+  @media (min-width: 320px) and (max-width: 576px) {
+    .container-navbar {
+      text-align: unset; } }
 
 .container-footer {
   background-color: #06225d;
@@ -619,7 +622,8 @@ textarea {
     height: 100%;
     z-index: -1; }
     .header__bg__section {
-      width: 25%; }
+      width: 25%;
+      height: 100%; }
     .header__bg__section:nth-of-type(1) {
       background-color: rgba(6, 34, 93, 0.8); }
     .header__bg__section:nth-of-type(2) {
@@ -651,15 +655,12 @@ textarea {
   @media (min-width: 320px) and (max-width: 576px) {
     .header {
       height: 100vh; }
-      .header__container {
-        height: 100vh; }
-        .header__container__image {
-          left: -120%;
-          width: 320%; }
+      .header__container__image {
+        background-position: cover;
+        left: -120%; }
       .header__bg {
-        height: 100vh; }
+        height: 100%; }
       .header__text {
-        top: 18rem;
         padding: 0 2.4rem; }
         .header__text .paragraph {
           width: 100%; } }
@@ -672,6 +673,13 @@ textarea {
     height: 150%; }
   .header-two__heading {
     color: #ffffff; }
+  @media (min-width: 320px) and (max-width: 576px) {
+    .header-two {
+      height: 60vh; }
+      .header-two__image {
+        height: 100%;
+        margin-top: 0;
+        width: unset; } }
 
 .who-we-are {
   display: flex;
@@ -959,7 +967,7 @@ textarea {
         margin-right: 1.6rem; }
   @media (min-width: 320px) and (max-width: 576px) {
     .featured-post {
-      padding: 0 2.4rem 4.8rem 2.4rem;
+      padding: 4rem 2.4rem 4.8rem 2.4rem;
       flex-direction: column; }
       .featured-post__main {
         width: 100%;
@@ -1055,7 +1063,7 @@ textarea {
         font-weight: 400; }
   @media (min-width: 320px) and (max-width: 576px) {
     .gallery {
-      padding: 0 2.4rem 4.8rem 2.4rem; }
+      padding: 4rem 2.4rem 4.8rem 2.4rem; }
       .gallery__row {
         flex-direction: column; }
         .gallery__row__card {
@@ -1085,7 +1093,7 @@ textarea {
         color: #dd792f; }
   @media (min-width: 320px) and (max-width: 576px) {
     .theme {
-      padding: 0 2.4rem 4.8rem 2.4rem;
+      padding: 4.8rem 2.4rem 4.8rem 2.4rem;
       flex-direction: column; }
       .theme__image {
         width: 100%;
@@ -1163,43 +1171,28 @@ textarea {
       .contact__text__form .btn {
         background-color: #dd792f; }
   @media (min-width: 320px) and (max-width: 576px) {
-    .contact {
-      height: 100vh; }
-      .contact__container {
-        position: fixed;
-        height: 120vh; }
-        .contact__container__image {
-          left: -130%;
-          width: 320%; }
-      .contact__bg {
-        position: fixed;
-        height: 120vh; }
-      .contact__text {
-        top: 4rem;
-        padding: 0 2.4rem;
-        flex-direction: column; }
-        .contact__text__content {
-          width: 100%; }
-          .contact__text__content .paragraph:nth-of-type(2),
-          .contact__text__content .paragraph:nth-of-type(3),
-          .contact__text__content .social__media {
-            display: none; }
-        .contact__text__form {
-          width: 100%; } }
-  @media (min-width: 320px) and (max-width: 480px) {
-    .contact {
-      height: 115vh; }
-      .contact__container {
-        height: 130vh; }
-      .contact__bg {
-        height: 130vh; } }
-  @media (max-width: 320px) {
-    .contact {
-      height: 130vh; }
-      .contact__container {
-        height: 150vh; }
-      .contact__bg {
-        height: 150vh; } }
+    .contact__container {
+      height: 100%; }
+      .contact__container__image {
+        height: 100%;
+        left: -130%;
+        width: unset; }
+    .contact__bg {
+      height: 100%; }
+    .contact__text {
+      height: 100%;
+      padding: 0 2.4rem;
+      flex-direction: column;
+      justify-content: flex-end; }
+      .contact__text__content {
+        width: 100%; }
+        .contact__text__content .paragraph:nth-of-type(2),
+        .contact__text__content .paragraph:nth-of-type(3),
+        .contact__text__content .social__media {
+          display: none; }
+      .contact__text__form {
+        width: 100%;
+        margin-bottom: 4rem; } }
 
 .login {
   height: 100vh;
